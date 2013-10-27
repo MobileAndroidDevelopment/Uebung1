@@ -70,6 +70,7 @@
     </content>
     <orderEntry type="jdk" jdkName="Android API 17 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="exp4j-0.3.10" level="project" />
   </component>
 </module>
 

@@ -2,9 +2,13 @@ package mobile.app.dev.uebung1;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.TextView;
+
+import de.congrace.exp4j.Calculable;
+import de.congrace.exp4j.ExpressionBuilder;
 
 public class MainActivity extends Activity {
     private TextView textView;
@@ -54,6 +58,16 @@ public class MainActivity extends Activity {
                 textView.append("%"); break;
             case R.id.button_dot:
                 textView.append("."); break;
+            case R.id.button_eq:
+                try{
+                    String expression = textView.getText().toString();
+                    Calculable calc = new ExpressionBuilder(expression).build();
+                    String result =  calc.calculate()+"";
+                    textView.setText(result);
+                } catch (Exception e){
+                    Log.d("Tag", "ohn weh");
+                }
+                break;
         }
     }
 

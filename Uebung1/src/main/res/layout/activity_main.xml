@@ -13,7 +13,9 @@
         android:id="@+id/textView"
         android:layout_height="0dp"
         android:layout_width="match_parent"
-        android:textSize="40sp"
+        android:textSize="60sp"
+        android:singleLine="true"
+        android:gravity="right|center_vertical"
         android:layout_weight=".22"/>
 
     <LinearLayout
@@ -79,7 +81,7 @@
         <Button
             android:id="@+id/button_div"
             android:layout_height="match_parent"
-            android:text="%"
+            android:text="/"
             android:textSize="35sp"
             android:layout_weight=".25"
             android:textColor="@android:color/background_light"

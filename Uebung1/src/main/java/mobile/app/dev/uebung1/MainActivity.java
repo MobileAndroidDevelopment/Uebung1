@@ -55,7 +55,7 @@ public class MainActivity extends Activity {
                 }
                 break;
             case R.id.button_div:
-                textView.append("%"); break;
+                textView.append("/"); break;
             case R.id.button_dot:
                 textView.append("."); break;
             case R.id.button_eq:
